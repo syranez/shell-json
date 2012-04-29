@@ -1,4 +1,4 @@
-# bash-json
+# shell-json
 
 This util maps json data to a directory structure in your file system for further usage in shell.
 
@@ -17,11 +17,11 @@ This util maps json data to a directory structure in your file system for furthe
         directory="/path/to";
         root_node="usage";
 
-        php bashjson.php --root="${root_node}" --directory="${directory}" "${foo}"
+        php shelljson.php --root="${root_node}" --directory="${directory}" "${foo}"
 
         # evaluate $?
 
-        # cleanup $directory. bashjson will never remove anything!
+        # cleanup $directory. shelljson will never remove anything!
 
 
 There is an example script in example.sh.

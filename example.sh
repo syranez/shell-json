@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-directory="/dev/shm/bashjson";
+directory="/dev/shm/shelljson";
 root_node="twitter"
 
 if [ -d "${directory}/${root_node}" ]; then
@@ -9,7 +9,7 @@ fi
 
 data=$(wget 'https://twitter.com/users/show/syranez.json'  -q -O -);
 
-php ./bashjson.php --root="${root_node}" --directory="${directory}" "${data}";
+php ./shelljson.php --root="${root_node}" --directory="${directory}" "${data}";
 
 if [ ! $? -eq 0 ]; then
     echo "error: $?";
