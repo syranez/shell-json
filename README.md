@@ -23,7 +23,8 @@ This util maps json data to a directory structure in your file system for furthe
 
         # cleanup $directory. bashjson will never remove anything!
 
-    There is an example script in example.sh.
+
+There is an example script in example.sh.
 
 ## Return values
 
