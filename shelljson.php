@@ -9,7 +9,7 @@
  *    - primitive properties are mapped to files containing the value
  *
  */
-final class BashJson {
+final class ShellJson {
 
     /**
      * contains the current directory while processing the json.
@@ -238,5 +238,5 @@ if (isset($options['root'])) {
    $rootNode = $options['root'];
 }
 
-$bj = new BashJson($directory, $rootNode);
+$bj = new ShellJson($directory, $rootNode);
 return $bj->create($argc, $argv);
